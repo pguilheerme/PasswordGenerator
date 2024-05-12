@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# Password Generator Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a password generator project built using Django for the backend and React.js for the frontend. The project aims to provide a secure and convenient way to generate strong passwords for various purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ## Installation
+      git clone https://github.com/pguilheerme/PasswordGenerator
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Backend (Django)
 
-- Configure the top-level `parserOptions` property like this:
+1. Install Django:
+   
+   ```bash
+   pip install django
+3. Install Django Cors Headers:
+   
+   ```bash
+   pip install django-cors-headers
+5. nstall Django Rest Framework:
+   
+   ```bash
+   pip install djangorestframework
+7. Install Numpy:
+   
+   ```bash
+   pip install numpy
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Frontend (React.js)
+1. Install dependencies:
+   
+   ```bash
+   npm install
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Usage
+1. Start the Django backend server:
+ 
+    ```bash
+   python manage.py runserver
+2. Start the React.js frontend development server: 
+    ```bash
+   npm start
+
+3. or with yarn
+    ```bash
+    yarn dev
+
+
+
+
+
+### This project is licensed under the MIT License - see the LICENSE file for details.
